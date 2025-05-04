@@ -1,4 +1,4 @@
-# Finance Tracker
+## Finance Tracker
 
 ## Overview
 This is a **modular, object-oriented Python application** to help users track their personal expenses. The program reads from and writes to a JSON file and allows users to:
@@ -58,4 +58,40 @@ Each expense includes:
 | Singleton Pattern  | `DataManager` ensures only one instance manages data access            |
 
 ---
+
+## File Structure
+
+- main.py                  # Main program and user menu interface
+
+- base.py                  # Defines BaseExpense (abstract class)
+
+- food_expense.py          # FoodExpense class
+
+- travel_expense.py        # TravelExpense class
+
+- utility_expense.py       # UtilityExpense class
+
+- personal_expense.py      # PersonalExpense class
+
+- factory.py               # ExpenseFactory for creating expense objects
+
+- expense_manager.py       # Handles add, delete, and display logic
+
+- file_handler.py          # Reads from and writes to expenses.json
+
+- validator.py             # Input validation (amount, date, etc.)
+
+- expenses.json            # JSON file for storing expense data
+
+- README.md                # Documentation for the project
+
+---
+
+## Conclusion
+
+This finance tracker project was built to show how object-oriented programming can be used in a simple but realistic way. It covers all four key OOP concepts abstraction, inheritance, polymorphism, and encapsulation through a clear and modular structure. Different expense types like food, travel, utility, and personal are handled using classes and categories, which makes the program flexible and easy to understand.
+
+Design patterns like Factory and Strategy were used to keep the code organized and easy to maintain. Data is stored in a JSON file, so it's persistent even after the program is closed. The program also includes basic error handling to guide users when they make mistakes.
+
+Overall, this project is a solid starting point for learning how to manage data using OOP in Python and can be expanded with more features like reports, filters, or even a simple user interface.
 
