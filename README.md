@@ -59,5 +59,3 @@ Each expense includes:
 
 ---
 
-## File Structure
-
